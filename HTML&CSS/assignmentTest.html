@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Guessing Color</title>
+    <style >
+    .image{position: absolute;  top: 300px; left: 300px}
+    #leftSide{position: absolute; left: 20px; top: 100px; width:600px;height:600px}
+    #rightSide{position: absolute; left: 620px; top:100px; width:600px; height:600px; border-left: 2px solid black }
+    </style>
+    <h1>Matching Game</h1>
+
+  </head>
+  <body onload="colors()" >
+    <div id="rightSide"></div>
+    <div id="leftSide"><img id="face1" src="http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png" class="image" /></div>
+  <script>
+
+    function colors(){
+      var numberOfFaces = 5;
+      var theLeftSide = document.getElementById("leftSide");
+      var face=document.getElementById("face1");
+      face.setAttribute('top', 200);
+      face.setAttribute('left', 200);
+      theLeftSide.appendChild(face)
+
+    }
+  </script>
+</html>
